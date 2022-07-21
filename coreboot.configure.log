@@ -1,0 +1,6 @@
+mkdir -p /home/user/heads/build/coreboot-4.13/w541-hotp-maximized && cp /home/user/heads/config/coreboot-w541-hotp-maximized.config /home/user/heads/build/coreboot-4.13/w541-hotp-maximized/.config && echo 'CONFIG_LOCALVERSION=Heads-v0.2.0-1220-g2cfa940' >> /home/user/heads/build/coreboot-4.13/w541-hotp-maximized/.config && echo 'CONFIG_MAINBOARD_SMBIOS_PRODUCT_NAME=w541-hotp-maximized' >> /home/user/heads/build/coreboot-4.13/w541-hotp-maximized/.config && make olddefconfig -C /home/user/heads/build/coreboot-4.13 obj=/home/user/heads/build/coreboot-4.13/w541-hotp-maximized DOTCONFIG=/home/user/heads/build/coreboot-4.13/w541-hotp-maximized/.config BUILD_TIMELESS=1 CFLAGS_x86_32=-fdebug-prefix-map=/home/user/heads=heads -gno-record-gcc-switches -Wno-error=packed-not-aligned CFLAGS_x86_64=-fdebug-prefix-map=/home/user/heads=heads -gno-record-gcc-switches -Wno-error=packed-not-aligned 
+make[1]: Entering directory '/home/user/heads/build/coreboot-4.13'
+#
+# configuration written to /home/user/heads/build/coreboot-4.13/w541-hotp-maximized/.config
+#
+make[1]: Leaving directory '/home/user/heads/build/coreboot-4.13'
